@@ -81,6 +81,6 @@ c.execute("CREATE TABLE IF NOT EXISTS haberler(trend INTEGER,title TEXT,url TEXT
 conn.commit()
 
 c.execute("SELECT * FROM haberler LIMIT100")
-sonuc=fetchall()
+sonuc=c.fetchall()
 
 st.table(sonuc)
