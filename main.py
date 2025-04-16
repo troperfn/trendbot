@@ -80,3 +80,7 @@ conn.commit()
 c.execute("CREATE TABLE IF NOT EXISTS haberler(trend INTEGER,title TEXT,url TEXT,resim TEXT,kaynak TEXT,tarih INTEGER)")
 conn.commit()
 
+c.execute("SELECT * FROM haberler LIMIT100")
+sonuc=fetchall()
+
+st.table(sonuc)
